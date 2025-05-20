@@ -1,0 +1,509 @@
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+
+}
+
+#header {
+  width: 100%;
+  height: 56px;
+  /* background-color: lightblue; */
+  position: fixed;
+  font-size: 0;
+}
+
+#header .start {
+  width: 10%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+
+  .menu-btn {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    left: 10%;
+    bottom: 18%;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+
+  }
+
+  .menu-btn:hover {
+    background-color: lightgray;
+  }
+
+  .menu-icon {
+    height: 24px;
+    width: 24px;
+    display: block;
+    fill: currentcolor;
+  }
+
+  .youtube-btn {
+    border: none;
+    background: transparent;
+    height: 100%;
+    width: 105px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    bottom: 5%;
+    padding-top: 11px;
+  }
+
+  .youtube-logo {
+    fill: currentcolor;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    width: 93px;
+    height: 20px;
+    cursor: pointer;
+    bottom: 6px;
+  }
+
+  .country-code-btn {
+    border: none;
+    background: transparent;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+    padding-top: 11px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .country-code {
+    color: #606060;
+    /* margin: 12px 0 0 -10px; */
+    font-size: 10px;
+    position: absolute;
+    top: 20%;
+
+  }
+}
+
+#header .center {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+
+  .search-bar {
+    appearance: none;
+    padding: 0 4px;
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    width: 536px;
+    height: 40px;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 40px 0 0 40px;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 1rem;
+    top: 10%;
+    left: 46%;
+    z-index: 1;
+  }
+
+  .search-bar:focus {
+    border: 1px solid #1c62b9;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+  }
+
+  .search-btn {
+    border: 1px solid #d3d3d3;
+    background-color: #f0efef;
+    width: 64px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    height: 42px;
+    position: absolute;
+    top: 10%;
+    left: 64%;
+  }
+
+  .search-btn:hover {
+    background-color: #e9e7e7;
+  }
+
+  .search-icon {
+    height: 24px;
+    width: 24px;
+    display: block;
+    fill: currentcolor;
+    margin: auto;
+  }
+
+  .voice-search-btn {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 13%;
+    left: 69%;
+    cursor: pointer;
+  }
+
+  .voice-search-btn:hover {
+    background: rgb(212, 212, 212);
+  }
+
+  .voice-search-icon {
+    height: 24px;
+    width: 24px;
+    display: block;
+    fill: currentcolor;
+    margin: auto;
+
+  }
+}
+
+#header .end {
+  width: 10%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+
+  .setting-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+  }
+
+  .setting-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: currentcolor;
+  }
+
+  .account-btn {
+    border: 1px solid rgb(233, 233, 233);
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    border-radius: 30px;
+    height: 36px;
+    width: 84px;
+    font-size: 0;
+  }
+
+  .account-btn:hover {
+    background: #cae6ff;
+  }
+
+  .account-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    fill: currentcolor;
+    color: #065fd4;
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+
+  }
+
+  .account-content {
+    display: inline-block;
+    color: #065fd4;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 7px;
+    left: 48%;
+  }
+}
+
+#sidebar {
+  position: fixed;
+  top: 57px;
+  width: 240px;
+  height: calc(100% - 57px);
+  overflow: auto;
+  scrollbar-width: thin;
+
+  .section {
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+    /* position: relative; */
+
+  }
+
+  .section02 {
+    padding: 16px 32px;
+    border-bottom: 1px solid lightgray;
+    /* position: relative; */
+  }
+
+  .section03 {
+    padding: 16px 14px 0;
+    border: none;
+    /* position: relative; */
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .account-btn {
+    border: 1px solid rgb(233, 233, 233);
+    background: white;
+    cursor: pointer;
+    position: relative;
+    border-radius: 30px;
+    height: 36px;
+    width: 84px;
+    font-size: 0;
+    margin-top: 15px;
+  }
+
+  .account-btn:hover {
+    background: #cae6ff;
+  }
+
+  .account-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    fill: currentcolor;
+    color: #065fd4;
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+
+  }
+
+  .account-content {
+    display: inline-block;
+    color: #065fd4;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 7px;
+    left: 48%;
+  }
+
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #606060;
+    margin-right: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .copyright {
+    padding: 16px;
+    font-size: 12px;
+    color: #909090;
+  }
+
+  .button {
+    display: block;
+    width: 204px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: rgb(233, 233, 233);
+  }
+
+  .icon {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+
+  }
+
+  .content {
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    bottom: 30%;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    padding: 6px 12px 4px 20px;
+  }
+
+}
+
+#selector {
+  position: fixed;
+  top: 57px;
+  left: 240px;
+  margin-left: 50px;
+
+  .button {
+    color: black;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .button:focus {
+    color: white;
+    background: black;
+  }
+
+  .button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+#content {
+  position: fixed;
+  top: 130px;
+  left: 250px;
+  height: calc(100% - 57px - 60px);
+  width: 100%;
+  overflow: auto;
+  /* scrollbar-width: thin; */
+
+
+  .card {
+    height: 316px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+
+  .video-photo {
+    border-radius: 10px;
+    width: 384px;
+    position: relative;
+  }
+
+  .video-photo:hover {
+    filter: brightness(0.5);
+  }
+
+  .second-row {
+    width: 384px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    /* white-space: nowrap; */
+  }
+
+  .chanel-btn {
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    /* position: absolute; */
+  }
+
+  .chanel-photo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .video-info {
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+    line-height: 1.2rem;
+    margin-top: 8px;
+    /* position: relative; */
+    /* left: 15%;
+    top: 10px; */
+  }
+
+  .video-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+  }
+
+  .channel {
+    width: 100%;
+  }
+
+  .chanel-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #606060;
+    display: inline-block;
+
+  }
+
+  .chanel-icon {
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+    color: #606060;
+  }
+
+  .chanel-name:hover {
+    color: black;
+  }
+
+  .state {
+    font-size: 14px;
+    color: #606060
+  }
+
+  .setting-btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px;
+    vertical-align: top;
+    text-align: right;
+    position: absolute;
+    left: 93%;
+  }
+
+  .setting-btn:hover {
+    background: #F0F0F0;
+  }
+
+  .setting-icon {
+    height: 24px;
+    width: 24px;
+    /* margin-top: 7px; */
+  }
+}
